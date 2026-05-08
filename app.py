@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import os
 
 app = Flask(__name__)
 
@@ -13,9 +14,6 @@ def snake():
 @app.route('/tictactoe')
 def tictactoe():
     return render_template('tictactoe.html')
-
-if __name__ == '__main__':
-    import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
