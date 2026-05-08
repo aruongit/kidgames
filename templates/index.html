@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Games for Kids!</title>
+    <meta name="description" content="Play fun games like Snake and Tic Tac Toe!">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="home-body">
+    <div class="container text-center">
+        <h1 class="bounce-in">Welcome to PlayZone! 🎮</h1>
+        <p class="subtitle">Choose a game to play!</p>
+        
+        <div class="game-cards">
+            <a href="/snake" class="card snake-card">
+                <div class="card-content">
+                    <h2>🐍 Snake Game</h2>
+                    <p>Eat apples and grow big!</p>
+                </div>
+            </a>
+            
+            <a href="/tictactoe" class="card tic-card">
+                <div class="card-content">
+                    <h2>❌ Tic Tac Toe ⭕</h2>
+                    <p>Play against a friend!</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
